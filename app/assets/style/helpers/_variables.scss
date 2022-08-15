@@ -67,8 +67,8 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary:       #00cc99; // $blue !default;
-$secondary:     $gray-600 !default;
+$primary:       #2D2D2D !default; // $blue !default;
+$secondary:     #1A1A1A !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -86,7 +86,8 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+  "black":      $black,
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -250,11 +251,31 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  1: $spacer * 0.25,
+  2: $spacer * 0.50,
+  3: $spacer * 0.75,
+  4: $spacer * 1.00,
+  5: $spacer * 1.25,
+  6: $spacer * 1.50,
+  7: $spacer * 1.75,
+  8: $spacer * 2.00,
+  9: $spacer * 2.25,
+  10: $spacer * 2.50,
+  11: $spacer * 2.75,
+  12: $spacer * 3.00,
+  13: $spacer * 3.25,
+  14: $spacer * 3.50,
+  15: $spacer * 3.75,
+  16: $spacer * 4.00,
+  17: $spacer * 4.25,
+  18: $spacer * 4.50,
+  19: $spacer * 4.75,
+  20: $spacer * 5.00,
+  21: $spacer * 5.25,
+  22: $spacer * 5.50,
+  23: $spacer * 5.75,
+  24: $spacer * 6.00,
+  25: $spacer * 6.25,
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -276,8 +297,8 @@ $position-values: (
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   $white !default;
-$body-color:                $gray-900 !default;
+$body-bg:                   #1C1C1C !default;
+$body-color:                $white !default;
 $body-text-align:           null !default;
 
 
