@@ -1,17 +1,51 @@
-.index__h1 {
-  color:#00cc99;
-  font-size: 20px;
-  font-weight: 400;
-}
-
-.material-icons{
+.material-icons {
   vertical-align: sub;
 }
 
-.navbar-nav .nav-link{
+.navbar-nav .nav-link {
   font-size: 18px;
 }
 
-.footer{
+.footer {
   color: #909090;
+  font-family: $font-family-monospace;
+}
+
+.teacher {
+  &.card:hover {
+    outline: 2px solid $main-green;
+  }
+
+  .card-title {
+    min-height: 58px;
+    line-height: 29px;
+  }
+
+  .card-footer {
+    border-top: 1px #c1c1c1 solid;
+
+    .teacher-price {
+      font-family: $font-family-monospace;
+    }
+  }
+}
+
+.btn-course {
+  background: linear-gradient(to right, $main-blue, $main-green);
+  border-radius: 8px;
+}
+
+.block-title {
+  position: relative;
+}
+
+.block-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translate(50%, 16px);
+  width: 50px;
+  height: 3px;
+  background-color: $main-green;
 }
