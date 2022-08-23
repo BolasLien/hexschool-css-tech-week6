@@ -1,0 +1,11 @@
+.footer {
+  color: #909090;
+  font-family: $font-family-monospace;
+  font-size: 12px;
+}
+
+@include media-breakpoint-up(md){
+  .footer {
+    font-size: 16px;
+  }
+}
