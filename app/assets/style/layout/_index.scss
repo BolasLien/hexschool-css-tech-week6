@@ -49,3 +49,61 @@
   height: 3px;
   background-color: $main-green;
 }
+
+.text-gradient{
+  background: linear-gradient($main-blue, $main-green);
+  background-clip: text;
+  -webkit-background-clip: text; /* 因為 Chrome 還沒有很好的支援度，所以要加上 webkit 前綴 */
+  color: transparent;
+}
+
+.hero{
+  background-image: url(../images/bg_home_mobile.jpg);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-top: 22.22%;
+  padding-bottom: 22.22%;
+
+  .hero-title{
+    font-size: 24px;
+  }
+
+  .hero-subtitle{
+    font-size: 14px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .hero {
+    background-image: url(../images/bg_home.jpg);
+    background-size: cover;
+    padding-top: 14.31%;
+    padding-bottom: 14.31%;
+
+    .hero-title{
+      font-size: 48px;
+    }
+
+    .hero-subtitle{
+      font-size: 18px;
+    }
+  }
+}
+
+// @include media-breakpoint-up(md) {
+//   .hero {
+//     .container {
+//       background-image: url(../images/bg_home.jpg);
+//       height: 680px;
+//     }
+
+//     .hero-title{
+//       font-size: 48px;
+//     }
+
+//     .hero-subtitle{
+//       font-size: 18px;
+//     }
+//   }
+// }
