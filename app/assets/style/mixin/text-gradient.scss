@@ -1,0 +1,6 @@
+@mixin text-gradient {
+  background: linear-gradient($main-blue, $main-green);
+  background-clip: text;
+  -webkit-background-clip: text; /* 因為 Chrome 還沒有很好的支援度，所以要加上 webkit 前綴 */
+  color: transparent;
+}
