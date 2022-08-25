@@ -8,30 +8,6 @@
   font-size: 18px;
 }
 
-.teacher {
-  &.card:hover {
-    outline: 2px solid $main-green;
-  }
-
-  .card-title {
-    min-height: 58px;
-    line-height: 29px;
-  }
-
-  .card-footer {
-    border-top: 1px #c1c1c1 solid;
-
-    .teacher-price {
-      font-family: $font-family-monospace;
-    }
-  }
-}
-
-.btn-course {
-  background: linear-gradient(to right, $main-blue, $main-green);
-  border-radius: 8px;
-}
-
 .block-title {
   position: relative;
 }
@@ -98,7 +74,7 @@
     @include media-breakpoint-up(xl) {
       opacity: 0.5;
       background-color: $primary;
-      .material-icons{
+      .material-icons {
         color: $white;
       }
 
@@ -113,7 +89,7 @@
     }
   }
 
-  @include media-breakpoint-up(xl){
+  @include media-breakpoint-up(xl) {
     .block-title::after {
       left: 0;
       transform: translate(0, 16px);
@@ -121,13 +97,13 @@
   }
 }
 
-.course-flow{
-  .card{
+.course-flow {
+  .card {
     border-radius: 12px;
     background-color: unset;
   }
 
-  .course-flow-number{
+  .course-flow-number {
     color: $main-green;
     font-size: 48px;
     line-height: 56px;
@@ -138,6 +114,31 @@
     padding-left: 8px;
     padding-right: 8px;
     transform: translate(-8px, -135%);
-    background-color: #1C1C1C;
+    background-color: #1c1c1c;
+  }
+}
+
+.recomand-course {
+  .teacher {
+    &.card:hover {
+      outline: 2px solid $main-green;
+    }
+
+    .card-title {
+      line-height: 29px;
+      @include media-breakpoint-up(md) {
+        min-height: 58px;
+
+      }
+    }
+
+    .card-footer {
+      border-top: 1px #c1c1c1 solid;
+    }
+  }
+
+  .btn-course {
+    background: linear-gradient(to right, $main-blue, $main-green);
+    border-radius: 8px;
   }
 }
