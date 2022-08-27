@@ -1,9 +1,5 @@
 @import './mixin/text-gradient.scss';
 
-.material-icons {
-  vertical-align: sub;
-}
-
 .navbar-nav .nav-link {
   font-size: 18px;
 }
@@ -27,6 +23,21 @@
   @include text-gradient;
 }
 
+.btn-gradient {
+  background: linear-gradient(to right, $main-blue, $main-green);
+  border-radius: 8px;
+  border: none;
+
+  &:hover{
+    background: unset;
+    outline: 1px solid $white;
+  }
+}
+
+.rounded-lg{
+  border-radius: 1.5rem;
+}
+
 // hero
 .hero {
   background-image: url(../images/bg_home_mobile.jpg);
@@ -36,27 +47,11 @@
   padding-top: 22.22%;
   padding-bottom: 22.22%;
 
-  .hero-title {
-    font-size: 24px;
-  }
-
-  .hero-subtitle {
-    font-size: 14px;
-  }
-
   @include media-breakpoint-up(md) {
     background-image: url(../images/bg_home.jpg);
     background-size: cover;
     padding-top: 14.31%;
     padding-bottom: 14.31%;
-
-    .hero-title {
-      font-size: 48px;
-    }
-
-    .hero-subtitle {
-      font-size: 18px;
-    }
   }
 }
 
@@ -68,7 +63,6 @@
 
     .material-icons {
       @include text-gradient;
-      font-size: 50px;
     }
 
     @include media-breakpoint-up(xl) {
@@ -146,15 +140,37 @@
       border-top: 1px #c1c1c1 solid;
     }
   }
+}
 
-  .btn-course {
-    background: linear-gradient(to right, $main-blue, $main-green);
-    border-radius: 8px;
+.evaluation{
+  @include media-breakpoint-up(xl) {
+    background-image: url(../images/bg_share.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .share-pic{
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      border: 1px solid #7C7E77;
+      top: 0;
+      left: 0;
+      transform: translate(-10px, 10px);
+      z-index: -10;
+      border-radius: 24px;
+    }
   }
 }
 
 .call-to-action{
   .material-icons{
-    font-size: 80px;
+    font-size: 104px;
+    opacity: .5;
   }
 }
+
