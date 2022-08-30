@@ -4,13 +4,15 @@ $(function() {
 
   var swiper = new Swiper(".evaluation-swiper", {
     spaceBetween: 30,
-    effect: "fade",
+    // effect: "fade",
     navigation: {
-      nextEl: ".evaluation-swiper-button-next",
-      prevEl: ".evaluation-swiper-button-prev",
+      nextEl: ".button-next",
+      prevEl: ".button-prev",
     },
     pagination: {
-      el: ".evaluation-swiper-pagination",
+      el: ".pagination",
+      bulletActiveClass: "pagination-bullet-active",
+      bulletClass: "pagination-bullet",
       clickable: true,
     },
     loop: true

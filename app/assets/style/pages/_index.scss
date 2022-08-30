@@ -28,13 +28,13 @@
   border-radius: 8px;
   border: none;
 
-  &:hover{
+  &:hover {
     background: unset;
     outline: 1px solid $white;
   }
 }
 
-.rounded-lg{
+.rounded-lg {
   border-radius: 1.5rem;
 }
 
@@ -91,16 +91,19 @@
   }
 }
 
-.lesson{
-  .lesson-list{
+.lesson {
+  .lesson-list {
     animation: scroll 20s linear infinite;
   }
   @keyframes scroll {
-    from{transform: translateX(0);}
-    to{transform: translateX(-1000px);}
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-1000px);
+    }
   }
 }
-
 
 .course-flow {
   .card {
@@ -142,35 +145,120 @@
   }
 }
 
-.evaluation{
-  @include media-breakpoint-up(xl) {
+.evaluation {
+  .banner {
+    transform: translateX(5px);
+
+    img{
+      max-width: calc(100% - 5px);
+    }
+    .share-pic {
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: calc(100% - 5px);
+        border: 1px solid #7c7e77;
+        top: 0;
+        left: 0;
+        transform: translate(-5px, 5px);
+        z-index: -10;
+        border-radius: 24px;
+      }
+    }
+  }
+
+  .student {
+    margin-top: 45px;
+    margin-bottom: 32px;
+    .avatar {
+      transform: translate(-32px, -40%);
+    }
+    img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  .swiper-controller {
+    max-width: 144px;
+    margin: 0 auto;
+  }
+
+  h3,
+  p {
+    color: #494755;
+  }
+
+  .button-next,
+  .button-prev {
+    z-index: 10;
+  }
+
+  .pagination-bullet {
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    background-color: $main-green;
+    margin-right: 4px;
+    margin-left: 4px;
+    transition: all 0.3s;
+
+    &:first-child {
+      margin-left: 16px;
+    }
+
+    &:last-child {
+      margin-right: 16px;
+    }
+
+    &-active {
+      width: 16px;
+      border-radius: 100px;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
     background-image: url(../images/bg_share.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-  }
+    .banner {
+      transform: translateX(22px);
+      img{
+        max-width: 100%;
+      }
+      .share-pic::before {
+        transform: translate(-10px, 10px);
+        width: 100%;
+      }
+    }
 
-  .share-pic{
-    position: relative;
-    &::before{
-      content: "";
+    .student {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      transform: translateX(-32px);
+      .avatar {
+        transform: translate(-32px, -50%);
+      }
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+    .swiper-controller {
       position: absolute;
-      height: 100%;
-      width: 100%;
-      border: 1px solid #7C7E77;
-      top: 0;
-      left: 0;
-      transform: translate(-10px, 10px);
-      z-index: -10;
-      border-radius: 24px;
+      right: 60%;
     }
   }
 }
 
-.call-to-action{
-  .material-icons{
+.call-to-action {
+  .material-icons {
     font-size: 104px;
-    opacity: .5;
+    opacity: 0.5;
   }
 }
-
