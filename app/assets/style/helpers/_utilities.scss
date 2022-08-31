@@ -1,9 +1,9 @@
 $utilities: (
-  "font-size": (
-      rfs: false,
-      responsive: true,
-      property: font-size,
-      class: fs,
-      values: $font-sizes
-    ),
+  'font-size': (
+    rfs: false,
+    responsive: true,
+    property: font-size,
+    class: fs,
+    values: $font-sizes,
+  ),
 );
