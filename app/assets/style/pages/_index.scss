@@ -220,6 +220,41 @@
   }
 }
 
+.article{
+  @include media-breakpoint-up(xl) {
+    .hover-effect{
+      border-radius: 12px;
+      transition: all .3s;
+      z-index: 1;
+      &:hover {
+        outline: 1px solid $main-green;
+        &::before{
+          content: '';
+          position: absolute;
+          width: calc(100% + 6px);
+          height: calc(100% - (32px * 2));
+          left: -2px;
+          top: 32px;
+          border-left: #1c1c1c 6px solid;
+          border-right: #1c1c1c 6px solid;
+          pointer-events: none;
+        }
+        &::after{
+          content: '';
+          position: absolute;
+          width: calc(100% - (32px * 2));
+          height: calc(100% + 6px);
+          top: -2px;
+          left: 32px;
+          border-top: #1c1c1c 6px solid;
+          border-bottom: #1c1c1c 6px solid;
+          pointer-events: none;
+        }
+      }
+    }
+  }
+}
+
 .evaluation {
   .banner {
     transform: translateX(5px);
