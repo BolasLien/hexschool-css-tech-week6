@@ -1,0 +1,342 @@
+---
+title: 課程介紹 | 程式家教
+layout: ./app/layout.ejs
+engine: ejs
+current: class
+---
+
+<section class="course">
+  <div class="container">
+    <div class="row justify-content-center pt-10">
+      <div class="col-xl-10">
+
+        <!-- 課程篩選 -->
+        <ul class="nav nav-pills gap-4 mb-12" id="nav-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link py-4 px-8 active" id="nav-all-tab" data-bs-toggle="pill" data-bs-target="#nav-all"
+                    type="button" role="tab" aria-controls="nav-all" aria-selected="true">所有課程</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link py-4 px-8" id="nav-app-tab" data-bs-toggle="pill" data-bs-target="#nav-app"
+                    type="button" role="tab" aria-controls="nav-app" aria-selected="false">行動應用開發</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link py-4 px-8" id="nav-db-tab" data-bs-toggle="pill" data-bs-target="#nav-db"
+                    type="button" role="tab" aria-controls="nav-db" aria-selected="false">資料庫/資料科學</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link py-4 px-8" id="nav-fe-tab" data-bs-toggle="pill" data-bs-target="#nav-fe"
+                    type="button" role="tab" aria-controls="nav-fe" aria-selected="false">前端語言</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link py-4 px-8" id="nav-be-tab" data-bs-toggle="pill" data-bs-target="#nav-be"
+                    type="button" role="tab" aria-controls="nav-be" aria-selected="false">後端語言</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link py-4 px-8" id="nav-os-tab" data-bs-toggle="pill" data-bs-target="#nav-os"
+                    type="button" role="tab" aria-controls="nav-os" aria-selected="false">作業系統與伺服器</button>
+          </li>
+        </ul>
+
+        <!-- 課程介紹 -->
+        <div class="tab-content" id="nav-tabContent">
+          <!-- 所有課程 -->
+          <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
+            <ul class="list-unstyled row gy-8">
+              <li class="col-md-12">
+                <div class="card flex-md-row">
+                  <div class="card-header border-0 text-center p-xl-12 p-6">
+                    <img src="./assets/images/teacher01.jpg" width="100" height="100" alt="teacher"
+                         class="rounded-circle mb-2">
+                    <p class="m-0 fw-light">Belinda</p>
+                  </div>
+                  <div class="card-body pt-xl-14 px-xl-0 p-6">
+                    <h5 class="card-title fs-xl-12 fs-10 fw-bold">基礎前端 - HTML</h5>
+                    <p class="card-text fw-light text-main-green mb-2">前端語言</p>
+                    <p class="card-text fw-light">帶領無基礎的平民老百姓，從最基礎的 HTML
+                      語法出發，使用最淺顯易懂的語言與生活隨處可見的例子，輕鬆進入網頁架設的世界，完成一個基礎的網頁架設。</p>
+                  </div>
+                  <div class="card-footer border-0 d-xl-flex flex-md-column text-center p-xl-12 p-mp-xl-12 p-md-6 p-6 pt-0 ms-md-auto0 ms-md-auto">
+                    <div class="mb-md-2 mb-4">
+                      <span class="me-2 fw-light">50分鐘</span><br class="d-none d-xl-block"><span class="fs-16 font-monospace">NT$1600</span>
+                    </div>
+                    <button class="btn btn-outline-light fs-9 py-2 px-xl-12 px-md-6 px-8 px-4 mb-md-2 mx-1">課程介紹</button>
+                    <button class="btn btn-gradient fs-9 py-2 px-xl-12 px-md-6 px-8 mx-1">立即預約</button>
+                  </div>
+                </div>
+              </li>
+              <li class="col-md-12">
+                <div class="card flex-md-row">
+                  <div class="card-header border-0 text-center p-xl-12 p-6">
+                    <img src="./assets/images/teacher02.jpg" width="100" height="100" alt="teacher"
+                         class="rounded-circle mb-2">
+                    <p class="m-0 fw-light">Guava</p>
+                  </div>
+                  <div class="card-body pt-xl-14 px-xl-0 p-6">
+                    <h5 class="card-title fs-xl-12 fs-10 fw-bold">2022 Python 全攻略｜從入門到實務</h5>
+                    <p class="card-text fw-light text-main-green mb-2">後端語言</p>
+                    <p class="card-text fw-light">Python支援多種程式設計範式，包括函數式、指令式、反射式、結構化和物件導向程式設計，它擁有動態型別系統和垃圾回收功能，能夠自動管理記憶體使用，本堂課帶你無痛入門，開發簡單的應用！</p>
+                  </div>
+                  <div class="card-footer border-0 d-xl-flex flex-md-column text-center p-xl-12 p-md-6 p-6 pt-0 ms-md-auto">
+                    <div class="mb-md-2 mb-4">
+                      <span class="me-2 fw-light">50分鐘</span><br class="d-none d-xl-block"><span class="fs-16 font-monospace">NT$1600</span>
+                    </div>
+                    <button class="btn btn-outline-light fs-9 py-2 px-xl-12 px-md-6 px-8 px-4 mb-md-2 mx-1">課程介紹</button>
+                    <button class="btn btn-gradient fs-9 py-2 px-xl-12 px-md-6 px-8 mx-1">立即預約</button>
+                  </div>
+                </div>
+              </li>
+              <li class="col-md-12">
+                <div class="card flex-md-row">
+                  <div class="card-header border-0 text-center p-xl-12 p-6">
+                    <img src="./assets/images/teacher03.jpg" width="100" height="100" alt="teacher"
+                         class="rounded-circle mb-2">
+                    <p class="m-0 fw-light">Joe</p>
+                  </div>
+                  <div class="card-body pt-xl-14 px-xl-0 p-6">
+                    <h5 class="card-title fs-xl-12 fs-10 fw-bold">活用 Line Bot ｜APP 開發到上架完整實戰攻略</h5>
+                    <p class="card-text fw-light text-main-green mb-2">行動應用開發</p>
+                    <p class="card-text fw-light">Line Bot 可用於實用的目的，如客戶服務或資訊獲取，有些聊天機器人會搭載自然語言處理系統，但大多簡單的系統只會擷取輸入的關鍵字，再從語料庫中找尋最合適的應答句，本堂課會帶你了解 Line Bot 如何結合其他工具的應用。</p>
+                  </div>
+                  <div class="card-footer border-0 d-xl-flex flex-md-column text-center p-xl-12 p-md-6 p-6 pt-0 ms-md-auto">
+                    <div class="mb-md-2 mb-4">
+                      <span class="me-2 fw-light">50分鐘</span><br class="d-none d-xl-block"><span class="fs-16 font-monospace">NT$1600</span>
+                    </div>
+                    <button class="btn btn-outline-light fs-9 py-2 px-xl-12 px-md-6 px-8 px-4 mb-md-2 mx-1">課程介紹</button>
+                    <button class="btn btn-gradient fs-9 py-2 px-xl-12 px-md-6 px-8 mx-1">立即預約</button>
+                  </div>
+                </div>
+              </li>
+              <li class="col-md-12">
+                <div class="card flex-md-row">
+                  <div class="card-header border-0 text-center p-xl-12 p-6">
+                    <img src="./assets/images/teacher04.jpg" width="100" height="100" alt="teacher"
+                         class="rounded-circle mb-2">
+                    <p class="m-0 fw-light">Lina</p>
+                  </div>
+                  <div class="card-body pt-xl-14 px-xl-0 p-6">
+                    <h5 class="card-title fs-xl-12 fs-10 fw-bold">Linux 零基礎七天入門｜入門到實務</h5>
+                    <p class="card-text fw-light text-main-green mb-2">作業系統與伺服器</p>
+                    <p class="card-text fw-light">Linux是一種自由和開放原始碼的類UNIX作業系統，作業系統中包含了許多使用者圖形介面和其他實用工具。課程會一步一步帶著你走，讓你能夠從頭開始學習程式語言的基本語法</p>
+                  </div>
+                  <div class="card-footer border-0 d-xl-flex flex-md-column text-center p-xl-12 p-md-6 p-6 pt-0 ms-md-auto">
+                    <div class="mb-md-2 mb-4">
+                      <span class="me-2 fw-light">50分鐘</span><br class="d-none d-xl-block"><span class="fs-16 font-monospace">NT$1600</span>
+                    </div>
+                    <button class="btn btn-outline-light fs-9 py-2 px-xl-12 px-md-6 px-8 px-4 mb-md-2 mx-1">課程介紹</button>
+                    <button class="btn btn-gradient fs-9 py-2 px-xl-12 px-md-6 px-8 mx-1">立即預約</button>
+                  </div>
+                </div>
+              </li>
+
+
+            </ul>
+
+          </div>
+          <!-- 行動應用開發 -->
+          <div class="tab-pane fade" id="nav-app" role="tabpanel" aria-labelledby="nav-app-tab">
+            <ul class="list-unstyled row gy-8">
+              <li class="col-md-12">
+                <div class="card flex-md-row">
+                  <div class="card-header border-0 text-center p-xl-12 p-6">
+                    <img src="./assets/images/teacher03.jpg" width="100" height="100" alt="teacher"
+                         class="rounded-circle mb-2">
+                    <p class="m-0 fw-light">Joe</p>
+                  </div>
+                  <div class="card-body pt-xl-14 px-xl-0 p-6">
+                    <h5 class="card-title fs-xl-12 fs-10 fw-bold">活用 Line Bot ｜APP 開發到上架完整實戰攻略</h5>
+                    <p class="card-text fw-light text-main-green mb-2">行動應用開發</p>
+                    <p class="card-text fw-light">Line Bot 可用於實用的目的，如客戶服務或資訊獲取，有些聊天機器人會搭載自然語言處理系統，但大多簡單的系統只會擷取輸入的關鍵字，再從語料庫中找尋最合適的應答句，本堂課會帶你了解 Line Bot 如何結合其他工具的應用。</p>
+                  </div>
+                  <div class="card-footer border-0 d-xl-flex flex-md-column text-center p-xl-12 p-md-6 p-6 pt-0 ms-md-auto">
+                    <div class="mb-md-2 mb-4">
+                      <span class="me-2 fw-light">50分鐘</span><br class="d-none d-xl-block"><span class="fs-16 font-monospace">NT$1600</span>
+                    </div>
+                    <button class="btn btn-outline-light fs-9 py-2 px-xl-12 px-md-6 px-8 px-4 mb-md-2 mx-1">課程介紹</button>
+                    <button class="btn btn-gradient fs-9 py-2 px-xl-12 px-md-6 px-8 mx-1">立即預約</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- 資料庫/資料科學 -->
+          <div class="tab-pane fade" id="nav-db" role="tabpanel" aria-labelledby="nav-db-tab">
+            <ul class="list-unstyled row gy-8">
+              <li class="col-md-12">
+                <div class="card flex-md-row">
+                  <div class="card-header border-0 text-center p-xl-12 p-6">
+                    <img src="./assets/images/teacher02.jpg" width="100" height="100" alt="teacher"
+                         class="rounded-circle mb-2">
+                    <p class="m-0 fw-light">Guava</p>
+                  </div>
+                  <div class="card-body pt-xl-14 px-xl-0 p-6">
+                    <h5 class="card-title fs-xl-12 fs-10 fw-bold">2022 Python 全攻略｜從入門到實務</h5>
+                    <p class="card-text fw-light text-main-green mb-2">後端語言</p>
+                    <p class="card-text fw-light">Python支援多種程式設計範式，包括函數式、指令式、反射式、結構化和物件導向程式設計，它擁有動態型別系統和垃圾回收功能，能夠自動管理記憶體使用，本堂課帶你無痛入門，開發簡單的應用！</p>
+                  </div>
+                  <div class="card-footer border-0 d-xl-flex flex-md-column text-center p-xl-12 p-md-6 p-6 pt-0 ms-md-auto">
+                    <div class="mb-md-2 mb-4">
+                      <span class="me-2 fw-light">50分鐘</span><br class="d-none d-xl-block"><span class="fs-16 font-monospace">NT$1600</span>
+                    </div>
+                    <button class="btn btn-outline-light fs-9 py-2 px-xl-12 px-md-6 px-8 px-4 mb-md-2 mx-1">課程介紹</button>
+                    <button class="btn btn-gradient fs-9 py-2 px-xl-12 px-md-6 px-8 mx-1">立即預約</button>
+                  </div>
+                </div>
+              </li>
+              <li class="col-md-12">
+                <div class="card flex-md-row">
+                  <div class="card-header border-0 text-center p-xl-12 p-6">
+                    <img src="./assets/images/teacher04.jpg" width="100" height="100" alt="teacher"
+                         class="rounded-circle mb-2">
+                    <p class="m-0 fw-light">Lina</p>
+                  </div>
+                  <div class="card-body pt-xl-14 px-xl-0 p-6">
+                    <h5 class="card-title fs-xl-12 fs-10 fw-bold">Linux 零基礎七天入門｜入門到實務</h5>
+                    <p class="card-text fw-light text-main-green mb-2">作業系統與伺服器</p>
+                    <p class="card-text fw-light">Linux是一種自由和開放原始碼的類UNIX作業系統，作業系統中包含了許多使用者圖形介面和其他實用工具。課程會一步一步帶著你走，讓你能夠從頭開始學習程式語言的基本語法</p>
+                  </div>
+                  <div class="card-footer border-0 d-xl-flex flex-md-column text-center p-xl-12 p-md-6 p-6 pt-0 ms-md-auto">
+                    <div class="mb-md-2 mb-4">
+                      <span class="me-2 fw-light">50分鐘</span><br class="d-none d-xl-block"><span class="fs-16 font-monospace">NT$1600</span>
+                    </div>
+                    <button class="btn btn-outline-light fs-9 py-2 px-xl-12 px-md-6 px-8 px-4 mb-md-2 mx-1">課程介紹</button>
+                    <button class="btn btn-gradient fs-9 py-2 px-xl-12 px-md-6 px-8 mx-1">立即預約</button>
+                  </div>
+                </div>
+              </li>
+
+
+            </ul>
+          </div>
+          <!-- 前端語言 -->
+          <div class="tab-pane fade" id="nav-fe" role="tabpanel" aria-labelledby="nav-fe-tab">
+            <ul class="list-unstyled row gy-8">
+              <li class="col-md-12">
+                <div class="card flex-md-row">
+                  <div class="card-header border-0 text-center p-xl-12 p-6">
+                    <img src="./assets/images/teacher01.jpg" width="100" height="100" alt="teacher"
+                         class="rounded-circle mb-2">
+                    <p class="m-0 fw-light">Belinda</p>
+                  </div>
+                  <div class="card-body pt-xl-14 px-xl-0 p-6">
+                    <h5 class="card-title fs-xl-12 fs-10 fw-bold">基礎前端 - HTML</h5>
+                    <p class="card-text fw-light text-main-green mb-2">前端語言</p>
+                    <p class="card-text fw-light">帶領無基礎的平民老百姓，從最基礎的 HTML
+                      語法出發，使用最淺顯易懂的語言與生活隨處可見的例子，輕鬆進入網頁架設的世界，完成一個基礎的網頁架設。</p>
+                  </div>
+                  <div class="card-footer border-0 d-xl-flex flex-md-column text-center p-xl-12 p-mp-xl-12 p-md-6 p-6 pt-0 ms-md-auto0 ms-md-auto">
+                    <div class="mb-md-2 mb-4">
+                      <span class="me-2 fw-light">50分鐘</span><br class="d-none d-xl-block"><span class="fs-16 font-monospace">NT$1600</span>
+                    </div>
+                    <button class="btn btn-outline-light fs-9 py-2 px-xl-12 px-md-6 px-8 px-4 mb-md-2 mx-1">課程介紹</button>
+                    <button class="btn btn-gradient fs-9 py-2 px-xl-12 px-md-6 px-8 mx-1">立即預約</button>
+                  </div>
+                </div>
+              </li>
+              <li class="col-md-12">
+                <div class="card flex-md-row">
+                  <div class="card-header border-0 text-center p-xl-12 p-6">
+                    <img src="./assets/images/teacher03.jpg" width="100" height="100" alt="teacher"
+                         class="rounded-circle mb-2">
+                    <p class="m-0 fw-light">Joe</p>
+                  </div>
+                  <div class="card-body pt-xl-14 px-xl-0 p-6">
+                    <h5 class="card-title fs-xl-12 fs-10 fw-bold">活用 Line Bot ｜APP 開發到上架完整實戰攻略</h5>
+                    <p class="card-text fw-light text-main-green mb-2">行動應用開發</p>
+                    <p class="card-text fw-light">Line Bot 可用於實用的目的，如客戶服務或資訊獲取，有些聊天機器人會搭載自然語言處理系統，但大多簡單的系統只會擷取輸入的關鍵字，再從語料庫中找尋最合適的應答句，本堂課會帶你了解 Line Bot 如何結合其他工具的應用。</p>
+                  </div>
+                  <div class="card-footer border-0 d-xl-flex flex-md-column text-center p-xl-12 p-md-6 p-6 pt-0 ms-md-auto">
+                    <div class="mb-md-2 mb-4">
+                      <span class="me-2 fw-light">50分鐘</span><br class="d-none d-xl-block"><span class="fs-16 font-monospace">NT$1600</span>
+                    </div>
+                    <button class="btn btn-outline-light fs-9 py-2 px-xl-12 px-md-6 px-8 px-4 mb-md-2 mx-1">課程介紹</button>
+                    <button class="btn btn-gradient fs-9 py-2 px-xl-12 px-md-6 px-8 mx-1">立即預約</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- 後端語言 -->
+          <div class="tab-pane fade" id="nav-be" role="tabpanel" aria-labelledby="nav-be-tab">
+            <ul class="list-unstyled row gy-8">
+              <li class="col-md-12">
+                <div class="card flex-md-row">
+                  <div class="card-header border-0 text-center p-xl-12 p-6">
+                    <img src="./assets/images/teacher02.jpg" width="100" height="100" alt="teacher"
+                         class="rounded-circle mb-2">
+                    <p class="m-0 fw-light">Guava</p>
+                  </div>
+                  <div class="card-body pt-xl-14 px-xl-0 p-6">
+                    <h5 class="card-title fs-xl-12 fs-10 fw-bold">2022 Python 全攻略｜從入門到實務</h5>
+                    <p class="card-text fw-light text-main-green mb-2">後端語言</p>
+                    <p class="card-text fw-light">Python支援多種程式設計範式，包括函數式、指令式、反射式、結構化和物件導向程式設計，它擁有動態型別系統和垃圾回收功能，能夠自動管理記憶體使用，本堂課帶你無痛入門，開發簡單的應用！</p>
+                  </div>
+                  <div class="card-footer border-0 d-xl-flex flex-md-column text-center p-xl-12 p-md-6 p-6 pt-0 ms-md-auto">
+                    <div class="mb-md-2 mb-4">
+                      <span class="me-2 fw-light">50分鐘</span><br class="d-none d-xl-block"><span class="fs-16 font-monospace">NT$1600</span>
+                    </div>
+                    <button class="btn btn-outline-light fs-9 py-2 px-xl-12 px-md-6 px-8 px-4 mb-md-2 mx-1">課程介紹</button>
+                    <button class="btn btn-gradient fs-9 py-2 px-xl-12 px-md-6 px-8 mx-1">立即預約</button>
+                  </div>
+                </div>
+              </li>
+              <li class="col-md-12">
+                <div class="card flex-md-row">
+                  <div class="card-header border-0 text-center p-xl-12 p-6">
+                    <img src="./assets/images/teacher03.jpg" width="100" height="100" alt="teacher"
+                         class="rounded-circle mb-2">
+                    <p class="m-0 fw-light">Joe</p>
+                  </div>
+                  <div class="card-body pt-xl-14 px-xl-0 p-6">
+                    <h5 class="card-title fs-xl-12 fs-10 fw-bold">活用 Line Bot ｜APP 開發到上架完整實戰攻略</h5>
+                    <p class="card-text fw-light text-main-green mb-2">行動應用開發</p>
+                    <p class="card-text fw-light">Line Bot 可用於實用的目的，如客戶服務或資訊獲取，有些聊天機器人會搭載自然語言處理系統，但大多簡單的系統只會擷取輸入的關鍵字，再從語料庫中找尋最合適的應答句，本堂課會帶你了解 Line Bot 如何結合其他工具的應用。</p>
+                  </div>
+                  <div class="card-footer border-0 d-xl-flex flex-md-column text-center p-xl-12 p-md-6 p-6 pt-0 ms-md-auto">
+                    <div class="mb-md-2 mb-4">
+                      <span class="me-2 fw-light">50分鐘</span><br class="d-none d-xl-block"><span class="fs-16 font-monospace">NT$1600</span>
+                    </div>
+                    <button class="btn btn-outline-light fs-9 py-2 px-xl-12 px-md-6 px-8 px-4 mb-md-2 mx-1">課程介紹</button>
+                    <button class="btn btn-gradient fs-9 py-2 px-xl-12 px-md-6 px-8 mx-1">立即預約</button>
+                  </div>
+                </div>
+              </li>
+
+
+            </ul>
+          </div>
+          <!-- 作業系統與伺服器 -->
+          <div class="tab-pane fade" id="nav-os" role="tabpanel" aria-labelledby="nav-os-tab">
+            <ul class="list-unstyled row gy-8">
+              <li class="col-md-12">
+                <div class="card flex-md-row">
+                  <div class="card-header border-0 text-center p-xl-12 p-6">
+                    <img src="./assets/images/teacher04.jpg" width="100" height="100" alt="teacher"
+                         class="rounded-circle mb-2">
+                    <p class="m-0 fw-light">Lina</p>
+                  </div>
+                  <div class="card-body pt-xl-14 px-xl-0 p-6">
+                    <h5 class="card-title fs-xl-12 fs-10 fw-bold">Linux 零基礎七天入門｜入門到實務</h5>
+                    <p class="card-text fw-light text-main-green mb-2">作業系統與伺服器</p>
+                    <p class="card-text fw-light">Linux是一種自由和開放原始碼的類UNIX作業系統，作業系統中包含了許多使用者圖形介面和其他實用工具。課程會一步一步帶著你走，讓你能夠從頭開始學習程式語言的基本語法</p>
+                  </div>
+                  <div class="card-footer border-0 d-xl-flex flex-md-column text-center p-xl-12 p-md-6 p-6 pt-0 ms-md-auto">
+                    <div class="mb-md-2 mb-4">
+                      <span class="me-2 fw-light">50分鐘</span><br class="d-none d-xl-block"><span class="fs-16 font-monospace">NT$1600</span>
+                    </div>
+                    <button class="btn btn-outline-light fs-9 py-2 px-xl-12 px-md-6 px-8 px-4 mb-md-2 mx-1">課程介紹</button>
+                    <button class="btn btn-gradient fs-9 py-2 px-xl-12 px-md-6 px-8 mx-1">立即預約</button>
+                  </div>
+                </div>
+              </li>
+
+
+            </ul>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</section>

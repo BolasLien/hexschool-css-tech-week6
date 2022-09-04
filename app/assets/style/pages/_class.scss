@@ -1,0 +1,43 @@
+
+
+.course{
+
+  .nav-pills{
+    .nav-link{
+      border: 1px solid $white;
+      color: $white;
+      &.active{
+        border: 1px solid $main-green;
+        color: $main-green;
+        background: none;
+      }
+
+
+    }
+  }
+
+  @include media-breakpoint-up(xl){
+    .card-body{
+      max-width: 576px;
+    }
+  }
+
+  @include media-breakpoint-up(md){
+    .card-text{
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .nav{
+    overflow-x: auto;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    &::-webkit-scrollbar{
+      display: none;
+    }
+  }
+}

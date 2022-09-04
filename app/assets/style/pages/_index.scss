@@ -26,6 +26,7 @@
 }
 
 .btn-gradient {
+  color: $white;
   background: linear-gradient(to right, $main-blue, $main-green);
   border-radius: 8px;
   border: none;
@@ -33,6 +34,11 @@
   &:hover {
     background: unset;
     outline: 1px solid $white;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 0.25rem rgba($main-green, 0.25);
+    background: linear-gradient(to right, $main-blue, $main-green);
   }
 }
 
@@ -148,7 +154,7 @@
     padding-left: 8px;
     padding-right: 8px;
     transform: translate(-8px, -135%);
-    background-color: #1c1c1c;
+    background-color: $main-gary;
   }
 }
 
@@ -194,7 +200,7 @@
     }
 
     &:hover {
-      background-color: rgba(#1c1c1c, 0.12);
+      background-color: rgba($main-gary, 0.12);
 
       p {
         opacity: 1;
@@ -212,7 +218,7 @@
     }
   }
 
-  background-color: rgba(#1c1c1c, 0.9);
+  background-color: rgba($main-gary, 0.9);
 
   p{
     opacity: 0.8;
@@ -224,7 +230,7 @@
   @include media-breakpoint-up(xl) {
     .hover-effect{
       border-radius: 12px;
-      transition: all .3s;
+      transition: all .7s;
       z-index: 1;
       &:hover {
         outline: 1px solid $main-green;
@@ -235,8 +241,8 @@
           height: calc(100% - (32px * 2));
           left: -2px;
           top: 32px;
-          border-left: #1c1c1c 6px solid;
-          border-right: #1c1c1c 6px solid;
+          border-left: $main-gary 6px solid;
+          border-right: $main-gary 6px solid;
           pointer-events: none;
         }
         &::after{
@@ -246,8 +252,8 @@
           height: calc(100% + 6px);
           top: -2px;
           left: 32px;
-          border-top: #1c1c1c 6px solid;
-          border-bottom: #1c1c1c 6px solid;
+          border-top: $main-gary 6px solid;
+          border-bottom: $main-gary 6px solid;
           pointer-events: none;
         }
       }
