@@ -5,28 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>程式家教</title>
+    <title>Coding Home | 程式家教</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary p-0">
       <div class="container">
-        <a class="navbar-brand py-4" href="./index.html">
-          <img src="./assets/images/logo.svg" alt="logo" width="174.42" height="42">
+        <h1 style="font-size: 0;">Coding Home | 程式家教</h1>
+        <a class="navbar-brand py-6 fs-1" href="./index.html">
+          <img class="d-none d-lg-inline" src="./assets/images/logo.svg" alt="logo" width="174.42" height="42">
+          <img class="d-lg-none" src="./assets/images/logo2.svg" alt="logo" width="24" height="24">
         </a>
-        <div class="d-flex">
-          <ul class="navbar-nav d-flex align-items-center">
-            <li class="nav-item me-12">
-              <a class="nav-link text-white" href="./index.html">首頁</a>
+        <a class="navbar-toggler border-0 py-6" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="material-icons text-main-green">
+            drag_handle
+            </span>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-lg-0">
+            <li class="nav-item me-lg-12 mx-auto">
+              <a class="nav-link pb-3 pt-6 py-lg-2 text-white fs-9 fw-light" href="./index.html">首頁</a>
             </li>
-            <li class="nav-item me-12">
-              <a class="nav-link text-white" href="./class.html">課程介紹</a>
+            <li class="nav-item me-lg-12 mx-auto">
+              <a class="nav-link py-3 py-lg-2 text-white fs-9 fw-light" href="./class.html">課程介紹</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#login" data-bs-toggle="modal" data-bs-target="#loginModal"><span class="material-icons me-1">
+            <li class="nav-item mx-auto">
+              <a class="nav-link pt-3 pb-6 py-lg-2 text-white fs-9 fw-light" href="#login" data-bs-toggle="modal" data-bs-target="#loginModal"><span class="material-icons me-1">
                 account_circle
                 </span>登入</a>
             </li>
@@ -45,7 +52,7 @@
         <div class="position-absolute bg-white top-0 start-100 translate-middle" style="width: 10px; height: 10px;"></div>
         <div class="position-absolute bg-white top-100 start-0 translate-middle" style="width: 10px; height: 10px;"></div>
         <div class="position-absolute bg-white top-100 start-100 translate-middle" style="width: 10px; height: 10px;"></div>
-        <h1 class="hero-title fs-lg-24 fs-12 fw-bold"><span class="text-gradient">全台最豐富的程式家教</span><br>在實踐中化理想為現實</h1>
+        <h2 class="hero-title fs-lg-24 fs-12 fw-bold"><span class="text-gradient">全台最豐富的程式家教</span><br>在實踐中化理想為現實</h2>
         <p class="hero-subtitle fs-lg-9 fs-7 mt-6 fw-light">全台最專業師資｜到府程式家教｜客製化課程</p>
       </div>
     </div>
@@ -63,7 +70,7 @@
       </div>
       <div class="col-xl-3 col-md-4">
         <div class="card text-center py-12">
-          <span class="material-icons fs-25 mb-6">
+          <span class="material-icons text-gradient fs-25 mb-6">
             code
           </span>
           <div class="card-body px-0">
@@ -74,7 +81,7 @@
       </div>
       <div class="col-xl-3 col-md-4">
         <div class="card text-center py-12">
-          <span class="material-icons fs-25 mb-6">
+          <span class="material-icons text-gradient fs-25 mb-6">
             rocket_launch
             </span>
           <div class="card-body px-0">
@@ -85,7 +92,7 @@
       </div>
       <div class="col-xl-3 col-md-4">
         <div class="card text-center py-12">
-          <span class="material-icons fs-25 mb-6">
+          <span class="material-icons text-gradient fs-25 mb-6">
             place
             </span>
           <div class="card-body px-0">
@@ -108,7 +115,7 @@
       <div class="col-xl-3 col-lg-5 col-md-6">
         <div class="card border border-white">
           <div class="card-body p-12">
-            <span class="course-flow-number">01</span>
+            <span class="text-main-green fs-24 font-monospace fw-bold d-block position-absolute px-2" style="line-height: 56px; transform: translate(-8px, -135%); background-color: #1C1C1C;">01</span>
             <h3 class="card-title fs-12 fw-bold mb-4">預約</h3>
             <div class="card-text fs-9 fw-light">線上預約指定課程與老師<br>由老師安排專屬課程</div>
           </div>
@@ -117,7 +124,7 @@
       <div class="col-xl-3 col-lg-5 col-md-6">
         <div class="card border border-white">
           <div class="card-body p-12">
-            <span class="course-flow-number">02</span>
+            <span class="text-main-green fs-24 font-monospace fw-bold d-block position-absolute px-2" style="line-height: 56px; transform: translate(-8px, -135%); background-color: #1C1C1C;">02</span>
             <h3 class="card-title fs-12 fw-bold mb-4">付款</h3>
             <div class="card-text fs-9 fw-light">支援各種支付方式<br>提供12期分期付款</div>
           </div>
@@ -126,7 +133,7 @@
       <div class="col-xl-3 col-lg-5 col-md-6">
         <div class="card border border-white">
           <div class="card-body p-12">
-            <span class="course-flow-number">03</span>
+            <span class="text-main-green fs-24 font-monospace fw-bold d-block position-absolute px-2" style="line-height: 56px; transform: translate(-8px, -135%); background-color: #1C1C1C;">03</span>
             <h3 class="card-title fs-12 fw-bold mb-4">上課</h3>
             <div class="card-text fs-9 fw-light">地點由您指定<br>密集性一對一教學</div>
           </div>
@@ -135,7 +142,7 @@
       <div class="col-xl-3 col-lg-5 col-md-6">
         <div class="card border border-white">
           <div class="card-body p-12">
-            <span class="course-flow-number">04</span>
+            <span class="text-main-green fs-24 font-monospace fw-bold d-block position-absolute px-2" style="line-height: 56px; transform: translate(-8px, -135%); background-color: #1C1C1C;">04</span>
             <h3 class="card-title fs-12 fw-bold mb-4">提供滿意度</h3>
             <div class="card-text fs-9 fw-light">提供課程滿意度及回饋<br>讓我們持續成長與進步</div>
           </div>
@@ -312,7 +319,7 @@
       <div class="col-lg-4 col-md-6">
         <div class="hover-effect position-relative">
           <div class="article-card p-xl-8">
-            <img src="./assets/images/article01.jpg" class="mb-4" alt="article01">
+            <img src="./assets/images/article01.jpg" class="d-block mw-100 mb-4" alt="article01">
             <h5 class="fs-9 fw-bold mb-4">2022 前端開發者學習地圖</h5>
             <p class="fw-light mb-4">轉職為前端的這條職業路上該如何發展？本篇為前端開發者提供學習地圖參考</p>
             <div class="text-end">
@@ -324,7 +331,7 @@
       <div class="col-lg-4 col-md-6">
         <div class="hover-effect position-relative">
           <div class="article-card p-xl-8">
-            <img src="./assets/images/article02.jpg" class="mb-4" alt="article01">
+            <img src="./assets/images/article02.jpg" class="d-block mw-100 mb-4" alt="article01">
             <h5 class="fs-9 fw-bold mb-4">軟體工程師有哪些類別</h5>
             <p class="fw-light mb-4">軟體工程師領域廣闊，許多人仍然對此相關職務感到陌生，本篇就介紹主流的軟體工程師職務</p>
             <div class="text-end">
@@ -336,7 +343,7 @@
       <div class="col-lg-4 col-md-6">
         <div class="hover-effect position-relative">
           <div class="article-card p-xl-8">
-            <img src="./assets/images/article03.jpg" class="mb-4" alt="article01">
+            <img src="./assets/images/article03.jpg" class="d-block mw-100 mb-4" alt="article01">
             <h5 class="fs-9 fw-bold mb-4">免費 25 小時前端教學資源</h5>
             <p class="fw-light mb-4">這篇文章規劃了適合「前端工程師」的學習地圖，讓新進的學生了解如何選擇課程</p>
             <div class="text-end">
