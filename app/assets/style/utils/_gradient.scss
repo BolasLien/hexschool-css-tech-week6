@@ -1,0 +1,30 @@
+$gradient: linear-gradient($main-blue, $main-green);
+$gradient-to-right: linear-gradient(to right, $main-blue, $main-green);
+
+@mixin text-gradient {
+  background: $gradient;
+  background-clip: text;
+  -webkit-background-clip: text; /* 因為 Chrome 還沒有很好的支援度，所以要加上 webkit 前綴 */
+  color: transparent;
+}
+
+.text-gradient {
+  @include text-gradient();
+}
+
+.btn-gradient {
+  color: $white;
+  background-image: $gradient-to-right;
+  border-radius: 8px;
+  border: none;
+
+  &:hover {
+    background: unset;
+    outline: 1px solid $white;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 0.25rem rgba($main-green, 0.25);
+    background: $gradient-to-right;
+  }
+}

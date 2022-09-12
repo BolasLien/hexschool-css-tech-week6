@@ -4,7 +4,9 @@ $(function() {
 
   var swiper = new Swiper(".evaluation-swiper", {
     spaceBetween: 30,
-    // effect: "fade",
+    autoplay: {
+      delay: 5000,
+    },
     navigation: {
       nextEl: ".button-next",
       prevEl: ".button-prev",

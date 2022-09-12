@@ -1,0 +1,31 @@
+$navbar-lg-height: 90px;
+$navbar-height: 72px;
+
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+
+  &::after{
+    content: '';
+    position: fixed;
+    background: linear-gradient(to right, $main-blue 50%, $main-green 50%);
+    width: 100%;
+    height: 2px;
+    top: $navbar-height;
+
+    @include media-breakpoint-up(lg){
+      top: $navbar-lg-height;
+    }
+  }
+
+  // 相鄰的區塊要推 navbar-height 才不會被 navbar 蓋到
+  & + section {
+    margin-top: $navbar-height;
+    @include media-breakpoint-up(lg){
+      margin-top: $navbar-lg-height;
+    }
+  }
+}

@@ -4,7 +4,9 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
 @import './base.scss';
+@import './utils/gradient';
 
+@import './layout/navbar.scss';
 @import './layout/footer.scss';
 
 @import './pages/index.scss';
